@@ -1,0 +1,22 @@
+# Created at 2018-10-16T23:21:22.803
+java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at org.apache.maven.surefire.junit.PojoTestSet.<init>(PojoTestSet.java:68)
+	at org.apache.maven.surefire.junit.JUnit3Provider.createTestSet(JUnit3Provider.java:127)
+	at org.apache.maven.surefire.junit.JUnit3Provider.invoke(JUnit3Provider.java:112)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: java.lang.RuntimeException: AbstractMapper:: Failed to initialize database access: java.net.ConnectException : Error connecting to server localhost on port 1,527 with message Connection refused (Connection refused).
+	at dao.AbstractMapper.<init>(AbstractMapper.java:29)
+	at dao.BookMapper.<init>(BookMapper.java:26)
+	at dao.BookMapper.getMapper(BookMapper.java:21)
+	at dao.TestBook.<clinit>(TestBook.java:13)
+	... 12 more
+
+

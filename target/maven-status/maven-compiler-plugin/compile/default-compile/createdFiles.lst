@@ -1,0 +1,8 @@
+dao/DB.class
+dao/Registry.class
+dao/Book.class
+dao/DomainObject.class
+dao/BookException.class
+dao/AbstractMapper.class
+dao/AppException.class
+dao/BookMapper.class
